@@ -23,6 +23,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
+    transition: background-color 0.3s ease;
 }
 
 .logo {
@@ -52,9 +53,12 @@ body {
 
 /* Hero Section */
 .hero {
-    background: url('../images/background.jpg') no-repeat center center/cover;
+    background: url('images/background.jpg') no-repeat center center/cover;
     height: 100vh;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .overlay {
@@ -75,17 +79,20 @@ body {
 .hero-content h1 {
     font-size: 3rem;
     margin-bottom: 10px;
+    animation: fadeInUp 1.2s ease;
 }
 
 .hero-content h2 {
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 20px;
+    animation: fadeInUp 1.5s ease;
 }
 
 .hero-content p {
     font-size: 1.2rem;
     margin-bottom: 30px;
+    animation: fadeInUp 1.8s ease;
 }
 
 .btn {
@@ -95,6 +102,7 @@ body {
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s;
+    animation: fadeInUp 2s ease;
 }
 
 .btn:hover {
@@ -106,6 +114,7 @@ body {
     height: 400px;
     border-radius: 50%;
     object-fit: cover;
+    animation: fadeIn 2.5s ease;
 }
 
 /* Sections */
@@ -139,6 +148,7 @@ section h2 {
     background: #333;
     border-radius: 5px;
     position: relative;
+    animation: progressFill 1.5s ease forwards;
 }
 
 .progress-line span {
@@ -156,4 +166,34 @@ footer {
     padding: 20px 0;
     background-color: #111;
     color: #fff;
+}
+
+/* Keyframe Animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes progressFill {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
 }

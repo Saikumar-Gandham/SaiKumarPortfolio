@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation -->
+    <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="container">
             <div class="logo">Sai Kumar</div>
@@ -29,28 +29,28 @@
     <section id="home" class="hero">
         <div class="overlay"></div>
         <div class="container">
-            <div class="hero-content">
+            <div class="hero-content" data-aos="fade-up">
                 <h1>Hi, I'm <span class="highlight">Sai Kumar Gandham</span></h1>
                 <h2>Data Analyst</h2>
-                <p>I specialize in transforming raw data into actionable insights using modern technologies like Python, SQL, and Machine Learning.</p>
+                <p>I specialize in transforming raw data into actionable insights using technologies like Python, SQL, and Machine Learning.</p>
                 <a href="assets/SaiKumar_Gandham_Resume_Final.pdf" class="btn" download>Download CV</a>
             </div>
-            <div class="hero-image">
+            <div class="hero-image" data-aos="fade-in">
                 <img src="images/profile.jpg" alt="Sai Kumar Gandham">
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about section">
+    <section id="about" class="section about-section" data-aos="fade-right">
         <div class="container">
             <h2>About Me</h2>
-            <p>I'm a passionate Data Analyst with practical industry experience in turning raw data into valuable business intelligence, specializing in data engineering, machine learning, and business intelligence tools like PowerBI and Tableau.</p>
+            <p>I am a passionate Data Analyst with industry experience in turning raw data into valuable business intelligence. I specialize in data engineering, machine learning, and business intelligence tools like PowerBI and Tableau.</p>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="skills section">
+    <section id="skills" class="section skills-section" data-aos="fade-left">
         <div class="container">
             <h2>Skills</h2>
             <div class="skills-bars">
@@ -83,31 +83,25 @@
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="experience section">
+    <section id="experience" class="section experience-section">
         <div class="container">
-            <h2>Work Experience</h2>
+            <h2 data-aos="fade-up">Work Experience</h2>
             <div class="experience-item" data-aos="fade-right">
                 <h3>VOSYN INC, Data Strategy Analyst Intern</h3>
                 <p>Jan 2024 - Apr 2024 | Chicago, USA</p>
-                <ul>
-                    <li>Led complex ETL processes for real-time localization on smart devices.</li>
-                    <li>Developed predictive models to forecast customer behavior and product adoption.</li>
-                </ul>
+                <p>Worked on data integration, ETL processes, and predictive modeling.</p>
             </div>
 
             <div class="experience-item" data-aos="fade-left">
                 <h3>TEMENOS PVT LTD, Data Analyst</h3>
                 <p>Nov 2021 - Dec 2022 | India</p>
-                <ul>
-                    <li>Managed ETL processes for core banking applications.</li>
-                    <li>Improved loan approval accuracy by 15% through advanced machine learning models.</li>
-                </ul>
+                <p>Led ETL processes and improved loan approval accuracy using machine learning.</p>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact section">
+    <section id="contact" class="section contact-section" data-aos="fade-up">
         <div class="container">
             <h2>Contact Me</h2>
             <form action="#" method="post">
@@ -134,7 +128,11 @@
     <script>
       AOS.init({
         duration: 1200,
+        easing: 'ease-in-out',
+        once: true
       });
     </script>
+    <!-- Smooth Scroll -->
+    <script src="script.js"></script>
 </body>
 </html>

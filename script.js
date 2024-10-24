@@ -3,6 +3,20 @@ window.addEventListener('scroll', function () {
     header.classList.toggle('sticky', window.scrollY > 0);
 });
 
+// Smooth scrolling for navigation links
+const navLinks = document.querySelectorAll('.nav-links a');
+
+navLinks.forEach(link => {
+    link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        window.scrollTo({
+            top: target.offsetTop - 60,
+            behavior: 'smooth'
+        });
+    });
+});
+
 const progressLines = document.querySelectorAll('.progress-line span');
 
 window.addEventListener('scroll', () => {
