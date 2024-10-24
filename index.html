@@ -23,87 +23,114 @@
     </header>
 
     <main>
+        <!-- Home Section -->
         <section id="home">
             <div class="container">
-                <img src="profile-pic.jpg" alt="Sai Kumar Gandham" class="profile-picture">
+                <img src="images/profile.jpg" alt="Sai Kumar Gandham" class="profile-picture">
                 <h1>Sai Kumar Gandham</h1>
                 <h2>Data Analyst</h2>
-                <p>Passionate Data Analyst with practical industry experience in turning raw information into valuable business intelligence.</p>
+                <div class="typing-text" data-words='["Data Analyst", "Machine Learning Enthusiast", "Problem Solver"]' data-wait="3000"></div>
             </div>
         </section>
 
+        <!-- About Section -->
         <section id="about">
             <div class="container">
                 <h2>About Me</h2>
-                <p>Proficient in data engineering, statistical analysis, and machine learning using Python, R, Tableau, and PowerBI. Committed to leveraging data-driven insights to tackle complex challenges.</p>
+                <p>Passionate Data Analyst with practical industry experience in turning raw information into valuable business intelligence. Proficient in data engineering, statistical analysis, and machine learning using Python, R, Tableau, and PowerBI.</p>
             </div>
         </section>
 
+        <!-- Skills Section -->
         <section id="skills">
             <div class="container">
                 <h2>Skills</h2>
-                <ul class="skills-list">
-                    <li>Machine Learning</li>
-                    <li>Data Analysis</li>
-                    <li>SQL</li>
-                    <li>Tableau</li>
-                    <li>Power BI</li>
-                    <li>Software Development</li>
-                </ul>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="fas fa-brain"></i>
+                        <h3>Machine Learning</h3>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Data Analysis</h3>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-database"></i>
+                        <h3>SQL</h3>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-chart-bar"></i>
+                        <h3>Tableau</h3>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-chart-pie"></i>
+                        <h3>Power BI</h3>
+                    </div>
+                </div>
             </div>
         </section>
 
+        <!-- Experience Section -->
         <section id="experience">
             <div class="container">
                 <h2>Work Experience</h2>
 
-                <div class="job">
+                <div class="timeline-item">
                     <h3>VOSYN INC - Data Strategy Analyst Intern</h3>
-                    <p>Chicago, USA | January 2024 - April 2024</p>
+                    <p class="date">Chicago, USA | January 2024 - April 2024</p>
                     <ul>
-                        <li>Led complex ETL processes for Vosyn API integration.</li>
+                        <li>Led complex ETL processes to integrate Vosyn API.</li>
                         <li>Executed data cleaning and transformation using Python and SQL.</li>
-                        <li>Engineered predictive models to forecast customer behavior.</li>
-                        <li>Collaborated on data models and visualizations in Power BI and Tableau.</li>
+                        <li>Engineered predictive models for customer behavior forecasting.</li>
+                        <li>Developed visualizations in Power BI and Tableau.</li>
                     </ul>
                 </div>
 
-                <div class="job">
+                <div class="timeline-item">
                     <h3>TEMENOS PVT LTD - Data Analyst</h3>
-                    <p>India | November 2021 - December 2022</p>
+                    <p class="date">India | November 2021 - December 2022</p>
                     <ul>
                         <li>Managed ETL processes for core banking applications.</li>
                         <li>Applied data analysis techniques to identify customer trends.</li>
                         <li>Developed financial data models using Python.</li>
-                        <li>Ensured compliance with data governance standards.</li>
                     </ul>
                 </div>
 
-                <div class="job">
+                <div class="timeline-item">
                     <h3>VALUEMOMENTUM - Data Analyst Trainee</h3>
-                    <p>India | June 2021 - November 2021</p>
+                    <p class="date">India | June 2021 - November 2021</p>
                     <ul>
                         <li>Led ETL processes for insurance claims data.</li>
-                        <li>Analyzed insurance claims datasets to improve efficiency.</li>
-                        <li>Developed predictive models for claims outcomes.</li>
+                        <li>Analyzed datasets to improve efficiency.</li>
                     </ul>
                 </div>
 
-                <!-- Add more job experiences as needed -->
             </div>
         </section>
 
+        <!-- Education Section -->
         <section id="education">
             <div class="container">
                 <h2>Education</h2>
 
-                <!-- Education details -->
                 <div class="education-item">
                     <h3>M.S. in Data Science</h3>
                     <p>University of Maryland Baltimore County | GPA: 3.83/4.0 | Expected Graduation: December 2024</p>
                 </div>
 
-                <!-- Add more education details as needed -->
+                <div class="education-item">
+                    <h3>Bachelors in Information Technology</h3>
+                    <p>Anurag University | CGPA: 3.58/4.0 | Graduated: May 2021</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Testimonial Section -->
+        <section id="testimonial">
+            <div class="container">
+                <h2>Testimonial</h2>
+                <blockquote>"Data is a precious thing and will last longer than the systems themselves." - Tim Berners-Lee</blockquote>
             </div>
         </section>
 
@@ -112,67 +139,33 @@
             <div class="container">
                 <h2>Contact Me</h2>
 
-                <!-- Contact Form -->
                 <form id="contact-form">
-                    <!-- Form fields -->
                     <input type="text" name="name" placeholder="Name" required />
                     <input type="email" name="email" placeholder="Email" required />
-                    <!-- Message field -->
                     <textarea name="message" placeholder="Message" required></textarea>
-
-                    <!-- Submit button -->
                     <button type="submit">Send Message</button>
+                </form>
 
-                    <!-- Resume Download Button -->
-                    <!-- Replace 'your-resume.pdf' with your actual resume file path -->
-                    <!-- Uncomment the line below when you have a resume file -->
-                    <!-- 
-                      Download Resume
-                      -->
-                      <!-- 
-                      Add a link to download your resume
-                      -->
-                      <!-- 
-                      Download Resume
-                      -->
-                      <!-- 
-                      Add a link to download your resume
-                      -->
-                      <!-- 
-                      Add a link to download your resume
-                      -->
-                      <!-- 
-                      Add a link to download your resume
-                      -->
-                      <!-- 
-                      Add a link to download your resume
-                      -->
+                <a href="assets/SaiKumar_Gandham_Resume_Final.pdf" download>
+                    <button type="button">Download Resume PDF</button>
+                </a>
 
-                  </form>
+            </div>
+        </section>
 
-                  <!-- Testimonial Section -->
-                  <!-- Add a quote about data analysis here -->
-                  <!-- Example quote: "Data is the new oil." - Clive Humby -->
-                  <!-- 
-                  Add a quote about data analysis here
-                  -->
+    </main>
 
-              </div><!-- End of container -->
-          </section><!-- End of contact section -->
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Sai Kumar Gandham. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/gandham-saikumar" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Saikumar-Gandham" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
 
-      </main><!-- End of main -->
-
-      <!-- Footer Section -->
-      <<footer><!-- Footer Section -->
-          <<div class=container><!-- Footer Container -->
-              <<p>&copy; 2024 Sai Kumar Gandham. All rights reserved.</p><!-- Copyright Notice -->
-
-              <<div class=social-links><!-- Social Links Container -->
-                  <<a href=https://www.linkedin.com/in/gandham-saikumar target=_blank><i class=fab fa-linkedin></i></a><!-- LinkedIn Link -->
-                  <<a href=https://github.com/Saikumar-Gandham target=_blank><i class=fab fa-github></i></a><!-- GitHub Link -->
-              <<// End of social links container -->  
-          <<// End of footer container -->  
-      <<// End of footer section -->  
-      <<script src=script.js></script><!-- JavaScript File -->  
-  <<// End of body -->  
-<<// End of HTML Document -->  
+    <script src="script.js"></script>
+</body>
+</html>
