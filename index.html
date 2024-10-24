@@ -3,169 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sai Kumar Gandham - Data Analyst Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sai Kumar Gandham | Data Analyst</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">SKG</div>
-            <ul>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Sai Kumar</div>
+            <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
-    <main>
-        <!-- Home Section -->
-        <section id="home">
-            <div class="container">
-                <img src="images/profile.jpg" alt="Sai Kumar Gandham" class="profile-picture">
-                <h1>Sai Kumar Gandham</h1>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hi, I'm <span class="highlight">Sai Kumar Gandham</span></h1>
                 <h2>Data Analyst</h2>
-                <div class="typing-text" data-words='["Data Analyst", "Machine Learning Enthusiast", "Problem Solver"]' data-wait="3000"></div>
+                <p>I specialize in transforming raw data into actionable insights using modern technologies like Python, SQL, and Machine Learning.</p>
+                <a href="assets/SaiKumar_Gandham_Resume_Final.pdf" class="btn" download>Download CV</a>
             </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about">
-            <div class="container">
-                <h2>About Me</h2>
-                <p>Passionate Data Analyst with practical industry experience in turning raw information into valuable business intelligence. Proficient in data engineering, statistical analysis, and machine learning using Python, R, Tableau, and PowerBI.</p>
+            <div class="hero-image">
+                <img src="images/profile.jpg" alt="Sai Kumar Gandham">
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Skills Section -->
-        <section id="skills">
-            <div class="container">
-                <h2>Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill-item">
-                        <i class="fas fa-brain"></i>
-                        <h3>Machine Learning</h3>
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I'm a passionate Data Analyst with practical industry experience in turning raw data into valuable business intelligence, specializing in data engineering, machine learning, and business intelligence tools like PowerBI and Tableau.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-bars">
+                <div class="bar">
+                    <div class="info">
+                        <span>Python</span>
                     </div>
-                    <div class="skill-item">
-                        <i class="fas fa-chart-line"></i>
-                        <h3>Data Analysis</h3>
+                    <div class="progress-line python"><span></span></div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <span>SQL</span>
                     </div>
-                    <div class="skill-item">
-                        <i class="fas fa-database"></i>
-                        <h3>SQL</h3>
+                    <div class="progress-line sql"><span></span></div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <span>Machine Learning</span>
                     </div>
-                    <div class="skill-item">
-                        <i class="fas fa-chart-bar"></i>
-                        <h3>Tableau</h3>
+                    <div class="progress-line ml"><span></span></div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <span>PowerBI & Tableau</span>
                     </div>
-                    <div class="skill-item">
-                        <i class="fas fa-chart-pie"></i>
-                        <h3>Power BI</h3>
-                    </div>
+                    <div class="progress-line powerbi"><span></span></div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Experience Section -->
-        <section id="experience">
-            <div class="container">
-                <h2>Work Experience</h2>
-
-                <div class="timeline-item">
-                    <h3>VOSYN INC - Data Strategy Analyst Intern</h3>
-                    <p class="date">Chicago, USA | January 2024 - April 2024</p>
-                    <ul>
-                        <li>Led complex ETL processes to integrate Vosyn API.</li>
-                        <li>Executed data cleaning and transformation using Python and SQL.</li>
-                        <li>Engineered predictive models for customer behavior forecasting.</li>
-                        <li>Developed visualizations in Power BI and Tableau.</li>
-                    </ul>
-                </div>
-
-                <div class="timeline-item">
-                    <h3>TEMENOS PVT LTD - Data Analyst</h3>
-                    <p class="date">India | November 2021 - December 2022</p>
-                    <ul>
-                        <li>Managed ETL processes for core banking applications.</li>
-                        <li>Applied data analysis techniques to identify customer trends.</li>
-                        <li>Developed financial data models using Python.</li>
-                    </ul>
-                </div>
-
-                <div class="timeline-item">
-                    <h3>VALUEMOMENTUM - Data Analyst Trainee</h3>
-                    <p class="date">India | June 2021 - November 2021</p>
-                    <ul>
-                        <li>Led ETL processes for insurance claims data.</li>
-                        <li>Analyzed datasets to improve efficiency.</li>
-                    </ul>
-                </div>
-
+    <!-- Experience Section -->
+    <section id="experience" class="experience section">
+        <div class="container">
+            <h2>Work Experience</h2>
+            <div class="experience-item" data-aos="fade-right">
+                <h3>VOSYN INC, Data Strategy Analyst Intern</h3>
+                <p>Jan 2024 - Apr 2024 | Chicago, USA</p>
+                <ul>
+                    <li>Led complex ETL processes for real-time localization on smart devices.</li>
+                    <li>Developed predictive models to forecast customer behavior and product adoption.</li>
+                </ul>
             </div>
-        </section>
 
-        <!-- Education Section -->
-        <section id="education">
-            <div class="container">
-                <h2>Education</h2>
-
-                <div class="education-item">
-                    <h3>M.S. in Data Science</h3>
-                    <p>University of Maryland Baltimore County | GPA: 3.83/4.0 | Expected Graduation: December 2024</p>
-                </div>
-
-                <div class="education-item">
-                    <h3>Bachelors in Information Technology</h3>
-                    <p>Anurag University | CGPA: 3.58/4.0 | Graduated: May 2021</p>
-                </div>
-
+            <div class="experience-item" data-aos="fade-left">
+                <h3>TEMENOS PVT LTD, Data Analyst</h3>
+                <p>Nov 2021 - Dec 2022 | India</p>
+                <ul>
+                    <li>Managed ETL processes for core banking applications.</li>
+                    <li>Improved loan approval accuracy by 15% through advanced machine learning models.</li>
+                </ul>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Testimonial Section -->
-        <section id="testimonial">
-            <div class="container">
-                <h2>Testimonial</h2>
-                <blockquote>"Data is a precious thing and will last longer than the systems themselves." - Tim Berners-Lee</blockquote>
-            </div>
-        </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="#" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
 
-        <!-- Contact Section -->
-        <section id="contact">
-            <div class="container">
-                <h2>Contact Me</h2>
-
-                <form id="contact-form">
-                    <input type="text" name="name" placeholder="Name" required />
-                    <input type="email" name="email" placeholder="Email" required />
-                    <textarea name="message" placeholder="Message" required></textarea>
-                    <button type="submit">Send Message</button>
-                </form>
-
-                <a href="assets/SaiKumar_Gandham_Resume_Final.pdf" download>
-                    <button type="button">Download Resume PDF</button>
-                </a>
-
-            </div>
-        </section>
-
-    </main>
-
-    <!-- Footer Section -->
+    <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 Sai Kumar Gandham. All rights reserved.</p>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/gandham-saikumar" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/Saikumar-Gandham" target="_blank"><i class="fab fa-github"></i></a>
-            </div>
+            <p>&copy; 2024 Sai Kumar Gandham | All Rights Reserved.</p>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1200,
+      });
+    </script>
 </body>
 </html>
